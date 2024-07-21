@@ -31,5 +31,5 @@ FROM caddy:2.8-alpine AS run
 # Copy the application executable from the build image
 COPY --from=build /app/dist /srv
 
-COPY --from=build Caddyfile /etc/caddy/Caddyfile
+COPY --from=build /app/Caddyfile /etc/caddy/Caddyfile
 
