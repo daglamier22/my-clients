@@ -99,9 +99,8 @@ export default function Calendar() {
         onEventDrop={moveEvent}
         onEventResize={resizeEvent}
         resizable
-        // date={moment().toDate()}
-        // max={}
-        // min={}
+        min={moment().set({ h: 8, m: 0, s: 0 }).toDate()}
+        max={moment().set({ h: 19, m: 0, s: 0 }).toDate()}
       />
     </div>
   );
