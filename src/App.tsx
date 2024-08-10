@@ -1,10 +1,10 @@
 import "./App.css";
-import Calendar from "./components/Calendar";
+import { Button } from "./components/ui/button";
 
 function App() {
   return (
     <>
-      <Calendar />
+      <Button>Click me</Button>
     </>
   );
 }
