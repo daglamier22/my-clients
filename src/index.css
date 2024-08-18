@@ -63,7 +63,23 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply sm:scroll-smooth min-h-screen;
+  }
   body {
     @apply bg-background text-foreground min-h-screen;
+  }
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+
+  .toggle-btn {
+    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg];
   }
 }
